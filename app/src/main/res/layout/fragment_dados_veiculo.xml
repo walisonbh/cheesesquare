@@ -1,0 +1,183 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	     xmlns:tools="http://schemas.android.com/tools"
+	     android:layout_width="match_parent"
+	     android:layout_height="match_parent"
+	>
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:nestedScrollingEnabled="true"
+			android:orientation="vertical"
+			android:weightSum="1">
+
+			<AutoCompleteTextView
+				android:id="@+id/especie"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="@string/especie_veiculo"
+				/>
+
+			<AutoCompleteTextView
+				android:id="@+id/marca"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="@string/marca_veiculo"
+				/>
+
+			<AutoCompleteTextView
+				android:id="@+id/modelo"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="@string/modelo_veiculo"
+				/>
+
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+
+				<EditText
+					android:id="@+id/ano_fabricacao"
+					android:layout_width="175dp"
+					android:layout_height="wrap_content"
+					android:ems="4"
+					android:hint="@string/ano_fabricacao"
+					android:inputType="number"
+					/>
+
+				<EditText
+					android:id="@+id/ano_modelo"
+					android:layout_width="175dp"
+					android:layout_height="wrap_content"
+					android:ems="4"
+					android:hint="@string/ano_modelo"
+					android:inputType="number"
+					/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+
+				<EditText
+					android:id="@+id/placa_veiculo"
+					android:layout_width="175dp"
+					android:layout_height="wrap_content"
+					android:ems="7"
+					android:hint="@string/placa_veiculo"
+					/>
+
+				<AutoCompleteTextView
+					android:id="@+id/cor_veiculo"
+					android:layout_width="175dp"
+					android:layout_height="wrap_content"
+					android:hint="@string/cor_veiculo"
+					/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+
+				<EditText
+					android:id="@+id/odometro"
+					android:layout_width="175dp"
+					android:layout_height="wrap_content"
+					android:ems="10"
+					android:hint="@string/odometro"
+					android:inputType="number"
+					/>
+
+				<AutoCompleteTextView
+					android:id="@+id/combustivel"
+					android:layout_width="175dp"
+					android:layout_height="wrap_content"
+					android:hint="@string/combustivel"
+					/>
+			</LinearLayout>
+
+			<EditText
+				android:id="@+id/quantidade_portas"
+				android:layout_width="175dp"
+				android:layout_height="wrap_content"
+				android:ems="10"
+				android:hint="@string/quantidade_portas"
+				android:inputType="number"
+				/>
+
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+
+				<EditText
+					android:id="@+id/valor_venda"
+					android:layout_width="175dp"
+					android:layout_height="wrap_content"
+					android:ems="10"
+					android:hint="@string/valor_venda"
+					android:inputType="number"
+					/>
+
+				<EditText
+					android:id="@+id/valor_promocao"
+					android:layout_width="175dp"
+					android:layout_height="wrap_content"
+					android:ems="10"
+					android:hint="@string/valor_promocao"
+					android:inputType="number"
+					/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+
+				<AutoCompleteTextView
+					android:id="@+id/uf_veiculo"
+					android:layout_width="175dp"
+					android:layout_height="wrap_content"
+					android:hint="@string/uf_veiculo"
+					/>
+
+				<AutoCompleteTextView
+					android:id="@+id/municipio_emplacamento"
+					android:layout_width="175dp"
+					android:layout_height="wrap_content"
+					android:hint="@string/municipio_emplacamento"
+					/>
+			</LinearLayout>
+
+			<AutoCompleteTextView
+				android:id="@+id/municipio_localizacao"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="@string/municipio_localizacao"
+				/>
+
+			<EditText
+				android:id="@+id/observacao"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:ems="10"
+				android:hint="@string/observacoes"
+				android:inputType="textMultiLine"
+				/>
+
+			<Button
+				android:id="@+id/proximo"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/proximo"/>
+
+		</LinearLayout>
+	</ScrollView>
+</FrameLayout>
